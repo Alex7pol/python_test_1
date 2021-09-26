@@ -83,6 +83,7 @@ def linkify(docs):
 
 
 def replace_contents(file_path, regex, new_content):
+    my = 1
     with open(file_path, 'r+') as f:
         content = f.read()
         content = regex.sub(new_content, content)
